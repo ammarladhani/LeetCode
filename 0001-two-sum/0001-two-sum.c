@@ -25,9 +25,5 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         item->value = i;
         HASH_ADD_INT(hashTable, key, item);
     }
-    HASH_ITER(hh, hashTable, item, tmpItem) {
-        HASH_DEL(hashTable, item);
-        free(item);
-    }
     return NULL;
 }
