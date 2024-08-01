@@ -1,7 +1,7 @@
 class Solution(object):
     def doesAliceWin(self, s):
-        if"a" in s or "e" in s or "i" in s or "o" in s or "u" in s:
-            return True
-        else: 
-            return False
+        for element in range(0, len(s)):
+            if s[element] == "a" or s[element] == "e" or s[element] == "i" or s[element] == "o" or s[element] == "u":
+                return True
+        return False
         
